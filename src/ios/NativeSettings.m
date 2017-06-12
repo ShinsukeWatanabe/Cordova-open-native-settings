@@ -85,7 +85,7 @@
 		result = [self do_open:[prefix stringByAppendingString:@"root=General&path=INTERNATIONAL"]];
 	}
 	else if ([key isEqualToString:@"location"]) {
-		result = [self do_open:[prefix stringByAppendingString:@"root=LOCATION_SERVICES"]];
+        result = [self do_open:[prefix stringByAppendingString:@"root=Privacy&path=LOCATION"]];
 	}
 	else if ([key isEqualToString:@"network"]) {
 		result = [self do_open:[prefix stringByAppendingString:@"root=General&path=Network"]];
